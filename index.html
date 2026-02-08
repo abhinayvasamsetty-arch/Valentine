@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You ❤️</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      color: #fff;
+    }
+    .card {
+      background: rgba(0,0,0,0.25);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+    button {
+      font-size: 1.2rem;
+      padding: 12px 25px;
+      margin: 10px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      background: #ff4d6d;
+      color: white;
+      transition: transform 0.2s;
+    }
+    button:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Would you be my Valentine? 💌</h1>
+    <button onclick="yes()">Yes 💖</button>
+    <button onclick="yes()">Yesssss 😍</button>
+  </div>
+
+  <script>
+    function yes() {
+      document.body.innerHTML = `
+        <div style="text-align:center;color:white;">
+          <h1>YAYYY!!! ❤️🥹</h1>
+          <p style="font-size:1.5rem;">I can’t wait to celebrate with you 💕</p>
+        </div>
+      `;
+    }
+  </script>
+</body>
+</html>
